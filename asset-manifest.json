@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car_renthal/static/css/main.19681208.css",
-    "main.js": "/car_renthal/static/js/main.c0edb185.js",
+    "main.js": "/car_renthal/static/js/main.3d100e03.js",
     "static/js/133.b135c3f5.chunk.js": "/car_renthal/static/js/133.b135c3f5.chunk.js",
     "static/js/118.30760fd5.chunk.js": "/car_renthal/static/js/118.30760fd5.chunk.js",
     "static/js/827.36f6dbf9.chunk.js": "/car_renthal/static/js/827.36f6dbf9.chunk.js",
@@ -9,7 +9,7 @@
     "index.html": "/car_renthal/index.html",
     "static/media/icons.svg": "/car_renthal/static/media/icons.208d84e622f8279d76e26616c85f3b69.svg",
     "main.19681208.css.map": "/car_renthal/static/css/main.19681208.css.map",
-    "main.c0edb185.js.map": "/car_renthal/static/js/main.c0edb185.js.map",
+    "main.3d100e03.js.map": "/car_renthal/static/js/main.3d100e03.js.map",
     "133.b135c3f5.chunk.js.map": "/car_renthal/static/js/133.b135c3f5.chunk.js.map",
     "118.30760fd5.chunk.js.map": "/car_renthal/static/js/118.30760fd5.chunk.js.map",
     "827.36f6dbf9.chunk.js.map": "/car_renthal/static/js/827.36f6dbf9.chunk.js.map",
@@ -17,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.19681208.css",
-    "static/js/main.c0edb185.js"
+    "static/js/main.3d100e03.js"
   ]
 }
