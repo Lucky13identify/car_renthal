@@ -1,4 +1,5 @@
 import ModalButton from 'components/ModalBtn/ModalBtn';
+import icon from 'assets/icons/icons.svg';
 import {
   Img,
   Li,
@@ -10,8 +11,8 @@ import {
   IconButton,
   FavoriteIcon,
   Icon,
+  ImgContainer,
 } from './Cards.styled';
-import icon from 'assets/icons/icons.svg';
 
 export const CatalogCards = ({ catalogCars, toggleCars, favoritesCars }) => {
   return (
@@ -41,7 +42,9 @@ export const CatalogCards = ({ catalogCars, toggleCars, favoritesCars }) => {
           <Li key={catalogCar.id}>
             <div>
               <Box>
-                <Img src={catalogCar.img} alt="car" />
+                <ImgContainer>
+                  <Img src={catalogCar.img} alt={catalogCar.model} />
+                </ImgContainer>
                 <IconButton onClick={() => toggleCars(catalogCar)}>
                   {favoritesCars &&
                     favoritesCars.findIndex(

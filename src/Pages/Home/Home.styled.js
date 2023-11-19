@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
+  margin: 0;
+
   font-family: Manrope;
-  color: white;
   font-size: 50px;
   font-weight: 600;
   line-height: 33px;
   letter-spacing: 0;
-  margin: 0;
+
+  color: white;
 `;
 
 export const Section = styled.div`
@@ -29,13 +31,15 @@ export const TextContainer = styled.div`
 export const Text = styled.p`
   padding-left: 200px;
   padding-right: 200px;
-  text-align: center;
-  font-family: Manrope;
-  color: white;
-  font-size: 25px;
-  font-weight: 400;
   margin-top: 60px;
   margin-bottom: 0;
+
+  text-align: center;
+  font-family: Manrope;
+  font-size: 25px;
+  font-weight: 400;
+
+  color: white;
 `;
 
 export const Conteiner = styled.section`
@@ -43,6 +47,8 @@ export const Conteiner = styled.section`
   flex-direction: column;
   height: 320px;
   max-width: 1600px;
+
+  background-color: grey;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.6),
       rgba(47, 48, 58, 0.6)
@@ -51,6 +57,7 @@ export const Conteiner = styled.section`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   margin: 0px auto;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -69,33 +76,38 @@ export const Wrap = styled.div`
 `;
 
 export const TextForIcon = styled.p`
-  font-family: Manrope;
-  color: #121417;
-  font-size: 20px;
-  font-weight: 600;
   margin: 0;
   align-items: center;
+
+  font-family: Manrope;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #121417;
 `;
 
 export const Button = styled.button`
   display: flex;
   width: 180px;
-  color: white;
   height: 50px;
   padding: 14px 44px;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
-  background: #3470ff;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s ease-in-out;
 
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
+
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+
+  color: white;
+  background: #3470ff;
 
   &:hover,
   &:focus {

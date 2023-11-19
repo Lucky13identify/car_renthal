@@ -1,3 +1,7 @@
+import React, { useState } from 'react';
+import { Hourglass } from 'react-loader-spinner';
+import { CatalogCards } from 'components/Cards/CatalogCards';
+import { Search } from 'components/Search/Search';
 import {
   Ul,
   Conteiner,
@@ -5,10 +9,6 @@ import {
   BoxButton,
   Wrap,
 } from './Catalog.styled';
-import React, { useState } from 'react';
-
-import { CatalogCards } from 'components/Cards/CatalogCards';
-import { Search } from 'components/Search/Search';
 
 export default function Catalog({
   toggleCars,
@@ -34,12 +34,25 @@ export default function Catalog({
       />
       <Conteiner>
         <Ul>
-          <CatalogCards
-            catalogCars={catalogCars}
-            toggleCars={toggleCars}
-            favoritesCars={favoritesCars}
-          />
+          {catalogCars.length !== 0 ? (
+            <CatalogCards
+              catalogCars={catalogCars}
+              toggleCars={toggleCars}
+              favoritesCars={favoritesCars}
+            />
+          ) : (
+            <Hourglass
+              visible={true}
+              height="50"
+              width="50"
+              ariaLabel="hourglass-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
+              colors={['#306cce', '#72a1ed']}
+            />
+          )}
         </Ul>
+
         <BoxButton>
           {limit < cars.length && (
             <LoadMoreButton type="button" onClick={clickLoadMore}>

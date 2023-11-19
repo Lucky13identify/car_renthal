@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { ModalBtn, ModalBtnText } from './ModalBtn.styled';
 import Modal from '../Modal/Modal';
+import { ModalBtn, ModalBtnText } from './ModalBtn.styled';
 
 const ModalButton = ({ catalogCar }) => {
   const [isShowModal, setIsShowModal] = useState(false);

@@ -1,5 +1,5 @@
-import { nanoid } from 'nanoid';
 import { useState } from 'react';
+import { nanoid } from 'nanoid';
 import {
   Btn,
   BtnText,
@@ -66,21 +66,13 @@ export const Search = ({ filterCatalogCars, carsArray, inputPrice }) => {
           {carsArray.map(car => {
             if (car === selectedCar) {
               return (
-                <OptionBlack
-                  key={nanoid()}
-                  defaultValue={car}
-                  onClick={e => console.log(e.currentTarget)}
-                >
+                <OptionBlack key={nanoid()} defaultValue={car}>
                   {car}
                 </OptionBlack>
               );
             } else {
               return (
-                <Option
-                  key={nanoid()}
-                  defaultValue={car}
-                  onClick={e => console.log(e.currentTarget)}
-                >
+                <Option key={nanoid()} defaultValue={car}>
                   {car}
                 </Option>
               );

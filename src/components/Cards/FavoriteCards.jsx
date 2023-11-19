@@ -1,4 +1,5 @@
 import ModalButton from 'components/ModalBtn/ModalBtn';
+import icon from 'assets/icons/icons.svg';
 import {
   Img,
   Li,
@@ -9,8 +10,8 @@ import {
   Box,
   IconButton,
   FavoriteIcon,
+  ImgContainer,
 } from './Cards.styled';
-import icon from 'assets/icons/icons.svg';
 
 export const FavoritesCards = ({ favoritesCars, toggleCars }) => {
   return (
@@ -38,7 +39,9 @@ export const FavoritesCards = ({ favoritesCars, toggleCars }) => {
           <Li key={favoritesCar.id}>
             <div>
               <Box>
-                <Img src={favoritesCar.img} alt="car" />
+                <ImgContainer>
+                  <Img src={favoritesCar.img} alt={favoritesCar.model} />
+                </ImgContainer>
                 <IconButton onClick={() => toggleCars(favoritesCar)}>
                   <FavoriteIcon>
                     <use href={icon + '#icon-heart'}></use>

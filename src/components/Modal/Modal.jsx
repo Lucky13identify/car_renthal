@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import icon from 'assets/icons/icons.svg';
 import {
   Overlay,
   ModalDiv,
@@ -18,12 +19,11 @@ import {
   Button,
   IconButton,
   Icon,
-} from './Modal.styles';
-import icon from 'assets/icons/icons.svg';
+  ImgContainer,
+} from './Modal.styled';
 
 const modalRoot = document.querySelector('#modal-root');
 const Modal = ({ closeModal, catalogCar }) => {
-  console.log(catalogCar);
   const parts = catalogCar.address.split(', ');
   const city = parts[1];
   const country = parts[2];
@@ -61,7 +61,10 @@ const Modal = ({ closeModal, catalogCar }) => {
     <Overlay onClick={handleOverlayClick}>
       <ModalDiv>
         <Box>
-          <Img src={catalogCar.img} alt="car" />
+          <ImgContainer>
+            <Img src={catalogCar.img} alt={catalogCar.model} />
+          </ImgContainer>
+
           <Text>
             {catalogCar.make}
             {catalogCar.model && (

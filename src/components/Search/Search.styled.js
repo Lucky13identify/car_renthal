@@ -5,11 +5,12 @@ export const Btn = styled.button`
   padding: 14px 44px;
   justify-content: center;
   align-items: center;
+
   border-radius: 12px;
-  background: #3470ff;
   border: none;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
+  background: #3470ff;
 
   &:hover,
   &:focus {
@@ -18,12 +19,13 @@ export const Btn = styled.button`
 `;
 
 export const BtnText = styled.span`
-  color: #fff;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
+
+  color: #fff;
 `;
 
 export const InputTo = styled.input`
@@ -32,14 +34,18 @@ export const InputTo = styled.input`
   height: 16px;
   padding: 16px 63px 16px 24px;
   align-items: center;
+
   border-radius: 0px 14px 14px 0px;
-  background: #f7f7fb;
-  color: #121417;
+
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+
+  background: #f7f7fb;
+  color: #121417;
+
   border: none;
   outline: none;
 `;
@@ -50,28 +56,34 @@ export const InputFrom = styled.input`
   height: 16px;
   padding: 16px 41px 16px 24px;
   align-items: center;
+
   border-radius: 14px 0px 0px 14px;
   border: none;
   border-right: 1px solid rgba(138, 138, 137, 0.2);
-  background: #f7f7fb;
-  color: #121417;
+
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+
+  background: #f7f7fb;
+  color: #121417;
+
   outline: none;
 `;
 
 export const MileageText = styled.span`
   position: absolute;
   top: -22px;
-  color: #8a8a89;
+
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+
+  color: #8a8a89;
 `;
 
 export const MileageLabel = styled.label`
@@ -85,14 +97,18 @@ export const SelectPrice = styled.select`
   padding: 14px 18px;
   align-items: flex-start;
   gap: 32px;
+
   border-radius: 14px;
-  background: #f7f7fb;
-  color: #121417;
+
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+
+  background: #f7f7fb;
+  color: #121417;
+
   border: none;
   outline: none;
 `;
@@ -100,12 +116,14 @@ export const SelectPrice = styled.select`
 export const PriceText = styled.span`
   position: absolute;
   top: -22px;
-  color: #8a8a89;
+
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+
+  color: #8a8a89;
 `;
 
 export const PriceLabel = styled.label`
@@ -120,14 +138,18 @@ export const SelectCar = styled.select`
   justify-content: center;
   align-items: center;
   gap: 32px;
+
   border-radius: 14px;
-  background: #f7f7fb;
-  color: #121417;
+
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+
+  background: #f7f7fb;
+  color: #121417;
+
   border: none;
   outline: none;
 `;
@@ -135,18 +157,21 @@ export const SelectCar = styled.select`
 export const CarText = styled.span`
   position: absolute;
   top: -22px;
-  color: #8a8a89;
+
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+
+  color: #8a8a89;
 `;
 
 export const CarLabel = styled.label`
   position: relative;
   display: flex;
 `;
+
 export const Form = styled.form`
   display: flex;
   align-items: center;
@@ -155,18 +180,20 @@ export const Form = styled.form`
 `;
 
 export const Option = styled.option`
-  color: rgba(18, 20, 23, 0.2);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+
+  color: rgba(18, 20, 23, 0.2);
 `;
 export const OptionBlack = styled.option`
-  color: #121417;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+
+  color: #121417;
 `;

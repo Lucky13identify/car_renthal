@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import {
   Title,
   Section,
@@ -6,7 +7,6 @@ import {
   TextContainer,
   Button,
 } from './Home.styled';
-import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
   const navigate = useNavigate();

@@ -7,11 +7,13 @@ export const ModalBtn = styled.button`
   padding: 12px 99px;
   justify-content: center;
   align-items: center;
+
   border-radius: 12px;
-  background: #3470ff;
   border: none;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
+
+  background: #3470ff;
 
   &:hover,
   &:focus {
@@ -20,10 +22,11 @@ export const ModalBtn = styled.button`
 `;
 
 export const ModalBtnText = styled.span`
-  color: #fff;
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
+
+  color: #fff;
 `;

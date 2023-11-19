@@ -1,47 +1,62 @@
 import styled from 'styled-components';
 
+export const ImgContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+
+  background-color: grey;
+`;
+
 export const Text = styled.p`
-  color: #121417;
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
   margin-top: 14px;
   margin-bottom: 8px;
   align-items: center;
-`;
 
-export const ColorText = styled.span`
-  color: #3470ff;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+
+  color: #121417;
+`;
+
+export const ColorText = styled.span`
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+
+  color: #3470ff;
 `;
 
 export const TagText = styled.p`
-  color: rgba(18, 20, 23, 0.5);
+  margin: 0;
+
   font-family: Manrope;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  margin: 0;
+
+  color: rgba(18, 20, 23, 0.5);
 `;
 
 export const Img = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 14px;
+
+  object-fit: cover;
+
   background: linear-gradient(
       180deg,
       rgba(18, 20, 23, 0.5) 2.5%,
       rgba(18, 20, 23, 0) 41.07%
     ),
     #f3f3f2;
-  object-fit: cover;
 `;
 
 export const Box = styled.div`
@@ -51,11 +66,11 @@ export const Box = styled.div`
 `;
 
 export const Li = styled.li`
-  width: 274px;
-  height: 426px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 274px;
+  height: 426px;
 `;
 
 export const Wrap = styled.div`
@@ -67,6 +82,7 @@ export const Wrap = styled.div`
 export const Icon = styled.svg`
   width: 18px;
   height: 18px;
+
   fill: none;
   stroke: #fff;
 `;
@@ -74,6 +90,7 @@ export const Icon = styled.svg`
 export const FavoriteIcon = styled.svg`
   width: 18px;
   height: 18px;
+
   fill: #3470ff;
   stroke: #3470ff;
 `;
@@ -82,14 +99,17 @@ export const IconButton = styled.button`
   top: 14px;
   right: 14px;
   position: absolute;
+
   width: 18px;
   height: 18px;
+  padding: 0;
+
+  font-family: Manrope;
+
+  cursor: pointer;
+  border: none;
   background: none;
   color: #fff;
-  font-family: Manrope;
-  border: none;
-  padding: 0;
-  cursor: pointer;
   transition: color 0.2s ease-in-out;
 
   &:hover,

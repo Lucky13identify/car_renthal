@@ -24,22 +24,25 @@ export const LoadMoreButton = styled.button`
   justify-content: center;
   width: 85px;
   height: 24px;
-  color: #3470ff;
+
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+
   border: none;
   background: none;
   padding: 0;
   text-decoration-line: underline;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
+  color: #3470ff;
 
-    &:hover,
-    &:focus {
-    color: #0B44CD;
+  &:hover,
+  &:focus {
+    color: #0b44cd;
+  }
 `;
 
 export const BoxButton = styled.div`
